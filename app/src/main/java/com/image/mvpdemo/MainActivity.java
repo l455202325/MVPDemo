@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements ILoginView {
         pwdET = (EditText) findViewById(R.id.login_user_pwd);
         loginBtn = (Button) findViewById(R.id.login);
 
-        final LoginPresenter loginPresenter = new LoginPresenter(this);
+        final LoginPresenter loginPresenter = new LoginPresenter(this,this);
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
