@@ -10,7 +10,6 @@ import com.image.mvpdemo.bean.User;
  */
 public class LoginModelImpl implements ILoginModel {
     private Context context;
-
     public LoginModelImpl(Context context) {
         this.context = context;
     }

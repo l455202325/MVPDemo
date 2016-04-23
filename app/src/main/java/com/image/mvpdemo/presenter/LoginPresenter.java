@@ -16,7 +16,6 @@ public class LoginPresenter {
     private ILoginView loginView;
     private ILoginModel loginModel;
 
-
     //View层 一般在Activity中实现，可以在构造方法中传入进来；
     //Model层一般已经自己实现，可以直接new出来，如果需要上下文对象一般可以在，presenter构造方法中传入进来
     public LoginPresenter(Context context,ILoginView loginView) {
