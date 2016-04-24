@@ -24,16 +24,23 @@ public class LoginPresenter {
     }
 
     public void Login(){
+        loginView.showProgressBar();
         loginModel.login(loginView.getUserName(), loginView.getPwd(), new ILoginModel.OnLoginListener() {
             @Override
             public void onSucceed(User user) {
+                loginView.dismissProgressBar();
                 loginView.onSucceed(user);
             }
 
             @Override
             public void onFailed(String msg) {
+                loginView.dismissProgressBar();
                 loginView.onFailed(msg);
             }
         });
+    }
+
+    public void register(){
+        loginView.register();
     }
 }

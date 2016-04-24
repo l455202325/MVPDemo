@@ -8,24 +8,58 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/login_bg_img"
     tools:context="com.image.mvpdemo.MainActivity">
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="用户登录"
+    android:textColor="#56abe4"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    />
     <EditText
         android:id="@+id/login_user_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入用户名：" />
+        android:hint="请输入用户名："
+        android:drawablePadding="5dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:drawableLeft="@mipmap/my"/>
 
     <EditText
         android:id="@+id/login_user_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入密码：" />
+        android:hint="请输入密码："
+        android:drawablePadding="5dp"
+        android:layout_marginTop="10dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:drawableLeft="@mipmap/lock"/>
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#56abe4"
+        android:textSize="20sp"
+        android:textColor="#eeeeee"
         android:text=" 登录" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#56abe4"
+            android:textSize="15sp"
+            android:text="注册"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
 </LinearLayout>

@@ -1,30 +1,10 @@
 package com.image.mvpdemo.bean;
 
+import cn.bmob.v3.BmobUser;
+
 /**
  * Created by Administrator on 2016-04-23.
  */
-public class User {
-    private  String userName;
-    private String pwd;
+public class User extends BmobUser{
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
-    public User(String userName, String pwd) {
-        this.userName = userName;
-        this.pwd = pwd;
-    }
 }

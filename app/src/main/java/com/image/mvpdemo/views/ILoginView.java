@@ -15,4 +15,8 @@ public interface ILoginView {
     public void onSucceed(User user);
     public void onFailed(String msg);
 
+    public void showProgressBar();
+    public void dismissProgressBar();
+    public void register();
+
 }
